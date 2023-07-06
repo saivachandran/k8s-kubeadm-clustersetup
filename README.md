@@ -26,4 +26,8 @@ sudo apt-mark hold kubelet kubeadm kubectl
 [Rfer1](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
 
 
+# k8s-cluster setup url using kubeadm
+
+[cluster-setup](https://bikramat.medium.com/set-up-a-kubernetes-cluster-with-kubeadm-508db74028ce)
+
        
