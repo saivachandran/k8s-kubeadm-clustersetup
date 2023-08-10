@@ -1,4 +1,3 @@
-# kubernetes-package-installation.md
 
 1. Update the apt package index and install packages needed to use the Kubernetes apt repository
    ```
