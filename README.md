@@ -46,14 +46,14 @@ step: 1 - on master node as a root user
 
 step 2 - it will give config and agent token like below "token has to change in your's"
 
-```
 Your Kubernetes control-plane has initialized successfully!
 
 To start using your cluster, you need to run the following as a regular user:
-
+```
   mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
+  
 
 Alternatively, if you are the root user, you can run:
 
@@ -75,6 +75,8 @@ step 3 - on master run below as a normal user
 bring node ready state apply weaveworks network
 ```
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+
+```
 
 ```
   mkdir -p $HOME/.kube
