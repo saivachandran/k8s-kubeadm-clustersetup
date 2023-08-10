@@ -34,9 +34,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 after cluster-setup.sh completion forllow below steps make nodes ready state
 
-bring node ready state apply weaveworks network
-```
-kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+
 
 ```
 
@@ -73,6 +71,10 @@ kubeadm join 172.31.6.184:6443 --token tv65a3.ipbr83iy82fbjsbj \
 '''
 
 step 3 - on master run below as a normal user
+
+bring node ready state apply weaveworks network
+```
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 
 ```
   mkdir -p $HOME/.kube
