@@ -32,11 +32,10 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 
 
-after cluster-setup.sh completion forllow below steps make nodes ready state
+# after cluster-setup.sh completion forllow below steps make nodes ready state
 
 
 
-```
 
 step: 1 - on master node as a root user
 
@@ -46,7 +45,6 @@ step: 1 - on master node as a root user
 
 step 2 - it will give config and agent token like below "token has to change in your's"
 
-Your Kubernetes control-plane has initialized successfully!
 
 To start using your cluster, you need to run the following as a regular user:
 ```
@@ -68,7 +66,7 @@ Then you can join any number of worker nodes by running the following on each as
 kubeadm join 172.31.6.184:6443 --token tv65a3.ipbr83iy82fbjsbj \
 	--discovery-token-ca-cert-hash sha256:d88e7625a4b1c923b500693d2303c893df80156d42f8ec318c12464aa446acaa 
 
-'''
+```
 
 step 3 - on master run below as a normal user
 
@@ -88,7 +86,7 @@ kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/we
 
 ```
 kubectl get nodes
-'''
+```
 
 step 4 - on worker node as a root user Note: token has to change wit yours
 
