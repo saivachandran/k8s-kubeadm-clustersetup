@@ -30,4 +30,11 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 [cluster-setup](https://bikramat.medium.com/set-up-a-kubernetes-cluster-with-kubeadm-508db74028ce)
 
+
+# bring node ready state apply weaveworks network
+```
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+
+```
+
        
