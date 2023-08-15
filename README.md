@@ -32,7 +32,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 
 
-# after cluster-setup.sh completion forllow below steps make nodes ready state
+# after cluster-setup.sh completion follow below steps make nodes ready state
 
 
 
